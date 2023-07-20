@@ -8,7 +8,7 @@ int main()
 
 	std::cin >> a,std::cin >> b;
 
-	c = a + b;
+	c = a - b;
 	std::cout << c << std::endl;
 	
 }
