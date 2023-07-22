@@ -4,12 +4,23 @@ int main()
 {
 	int a;
 	int b;
-	int c;
+	double c;
 
-	std::cin >> a,std::cin >> b;
+	std::cin >> a >> b;
 
-	c = a * b;
-	std::cout << c << std::endl;
+    std::cout << a + b << std::endl;
+    std::cout << a - b << std::endl;
+    std::cout << a * b << std::endl;
+
+    if (b != 0) {
+		std::cout << a / b << std::endl;
+
+        // Output the remainder of A divided by B
+		std::cout << a % b << std::endl;
+    }
+    else {
+		std::cout << "계산할 수 없습니다." << std::endl;
+    }
 	
 }
 
