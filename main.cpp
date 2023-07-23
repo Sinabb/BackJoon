@@ -2,26 +2,12 @@
 
 int main()
 {
-	int a;
-	int b;
-	double c;
+	const int a = 100;
+	char Print[a];
 
-	std::cin >> a >> b;
+	std::cin.getline(Print, a);
 
-    std::cout << a + b << std::endl;
-    std::cout << a - b << std::endl;
-    std::cout << a * b << std::endl;
-
-    if (b != 0) {
-		std::cout << a / b << std::endl;
-
-        // Output the remainder of A divided by B
-		std::cout << a % b << std::endl;
-    }
-    else {
-		std::cout << "계산할 수 없습니다." << std::endl;
-    }
-	
+	std::cout << Print << "??!" << std::endl;
 }
 
 /* 1번 Hello World!를 출력하세요
@@ -38,3 +24,28 @@ std::cout << "Hello World!" << std::endl;
 	c = a + b;
 	std::cout << c << std::endl;
 */ 
+/*
+#include <iostream>
+
+int main()
+{
+	int a;
+	int b;
+	double c;
+
+	std::cin >> a >> b;
+
+	std::cout << a + b << std::endl;
+	std::cout << a - b << std::endl;
+	std::cout << a * b << std::endl;
+
+	if (b != 0) {
+		std::cout << a / b << std::endl;
+		std::cout << a % b << std::endl;
+	}
+	else {
+		std::cout << "계산할 수 없습니다." << std::endl;
+	}
+
+}
+*/
