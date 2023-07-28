@@ -1,22 +1,27 @@
 #include <iostream>
 
-int main()
-{
-	int A, B, C;
-	std::cin >> A >> B >> C;
+int main() {
+	std::string a, b;
 
-	int result1 = (A + B) % C;
+	std::cout << "숫자를 입력하세요 ";
+	std::cin >> a;
 
-	int result2 = ((A % C) + (B % C)) % C;
+	std::cout << "숫자를 입력하세요 ";
+	std::cin >> b;
 
-	int result3 = (A * B) % C;
+	int b0 = b[0] - '0';
+	int b1 = b[1] - '0';
+	int b2 = b[2] - '0';
 
-	int result4 = ((A % C) * (B % C)) % C;
+	int a_num = (a[0] - '0') * 100 + (a[1] - '0') * 10 + (a[2] - '0');
 
-	std::cout << result1 << std::endl;
-	std::cout << result2 << std::endl;
-	std::cout << result3 << std::endl;
-	std::cout << result4 << std::endl;
+	std::cout << b2 * a_num << std::endl;
+	std::cout << b1 * a_num << std::endl;
+	std::cout << b0 * a_num << std::endl;
+
+	int b_num = (b[0] - '0') * 100 + (b[1] - '0') * 10 + (b[2] - '0');
+
+	std::cout << a_num * b_num << std::endl;
 
 	return 0;
 }
