@@ -1,15 +1,11 @@
 #include <iostream>
 
 int main() {
-	int A, B, C;
-	std::cin >> A >> B >> C;
-
-	int result = A + B + C;
-	std::cout << result << std::endl;
-
-	return 0;
+	std::cout << "\\    /\\\n";
+	std::cout << " )  ( ')\n";
+	std::cout << "(  /  )\n";
+	std::cout << " \\(__)|\n";
 }
-
 /* 1번 Hello World!를 출력하세요
 
 std::cout << "Hello World!" << std::endl;
@@ -124,5 +120,11 @@ std::string a, b;
 */
 
 /*
-	
+		int A, B, C;
+	std::cin >> A >> B >> C;
+
+	int result = A + B + C;
+	std::cout << result << std::endl;
+
+	return 0;
 */
