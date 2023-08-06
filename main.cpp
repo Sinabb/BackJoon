@@ -1,10 +1,24 @@
 #include <iostream>
 
 int main() {
-	std::cout << "\\    /\\\n";
-	std::cout << " )  ( ')\n";
-	std::cout << "(  /  )\n";
-	std::cout << " \\(__)|\n";
+	int a, b;
+
+	std::cin >> a;
+	std::cin >> b;
+
+	if (a>b)
+	{
+		std::cout << ">" << std::endl;
+	}
+	else if(a<b)
+	{
+		std::cout << "<" << std::endl;
+	}
+	else
+	{
+		std::cout << "==" << std::endl;
+	}
+
 }
 /* 1번 Hello World!를 출력하세요
 
