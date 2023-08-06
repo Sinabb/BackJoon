@@ -1,22 +1,24 @@
 #include <iostream>
 
 int main() {
-	int a, b;
+	int a;
 
 	std::cin >> a;
-	std::cin >> b;
 
-	if (a>b)
-	{
-		std::cout << ">" << std::endl;
+	if (a >= 90 && a <= 100) {
+		std::cout << "A" << std::endl;
 	}
-	else if(a<b)
-	{
-		std::cout << "<" << std::endl;
+	else if (a >= 80 && a < 90) {
+		std::cout << "B" << std::endl;
 	}
-	else
-	{
-		std::cout << "==" << std::endl;
+	else if (a >= 70 && a < 80) {
+		std::cout << "C" << std::endl;
+	}
+	else if (a >= 60 && a < 70) {
+		std::cout << "D" << std::endl;
+	}
+	else {
+		std::cout << "F" << std::endl;
 	}
 
 }
