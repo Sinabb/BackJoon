@@ -1,26 +1,23 @@
 #include <iostream>
 
-int main() {
-	int a;
+bool isLeapYear(int year)
+{
+	return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+}
 
-	std::cin >> a;
+int main()
+{
+		int year;
+		std::cin >> year;
 
-	if (a >= 90 && a <= 100) {
-		std::cout << "A" << std::endl;
-	}
-	else if (a >= 80 && a < 90) {
-		std::cout << "B" << std::endl;
-	}
-	else if (a >= 70 && a < 80) {
-		std::cout << "C" << std::endl;
-	}
-	else if (a >= 60 && a < 70) {
-		std::cout << "D" << std::endl;
-	}
-	else {
-		std::cout << "F" << std::endl;
-	}
-
+		if (isLeapYear(year)) {
+			std::cout << "1" << std::endl;
+		}
+		else {
+			std::cout << "0" << std::endl;
+		}
+		return 0;
+	
 }
 /* 1번 Hello World!를 출력하세요
 
