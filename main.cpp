@@ -1,23 +1,16 @@
 #include <iostream>
 
-bool isLeapYear(int year)
-{
-	return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-}
+int main() {
+	int N;
+	std::cin >> N;
 
-int main()
-{
-		int year;
-		std::cin >> year;
+	std::cout  << N;
 
-		if (isLeapYear(year)) {
-			std::cout << "1" << std::endl;
-		}
-		else {
-			std::cout << "0" << std::endl;
-		}
-		return 0;
-	
+	for (int i = 1; i <= 10; ++i) {
+		std::cout << N << " x " << i << " = " << N * i << "\n";
+	}
+
+	return 0;
 }
 /* 1번 Hello World!를 출력하세요
 
