@@ -1,13 +1,14 @@
 #include <iostream>
 
 int main() {
-	int N;
-	std::cin >> N;
+	int T;
+	std::cin >> T;  
 
-	std::cout  << N;
-
-	for (int i = 1; i <= 10; ++i) {
-		std::cout << N << " x " << i << " = " << N * i << "\n";
+	for (int i = 0; i < T; ++i) {
+		int A, B;
+		std::cin >> A >> B;  
+		int sum = A + B;
+		std::cout << sum << std::endl;  
 	}
 
 	return 0;
