@@ -1,17 +1,10 @@
 #include <iostream>
+#include "dynamicprogramming.h"
 
-int main() {
-	int T;
-	std::cin >> T;  
 
-	for (int i = 0; i < T; ++i) {
-		int A, B;
-		std::cin >> A >> B;  
-		int sum = A + B;
-		std::cout << sum << std::endl;  
-	}
-
-	return 0;
+int main() 
+{
+	Dynamic2839();
 }
 /* 1번 Hello World!를 출력하세요
 
