@@ -44,3 +44,34 @@ int  Dynamic1463(){
 
     return 0;
 }
+
+int Sum4(int n)
+{
+    std::vector<int> num(n + 1, 0);
+
+    num[0] = 1;
+    num[1] = 1;
+    num[2] = 2;
+
+    for (int i = 3; i <= n; i++) {
+        num[i] = num[i - 1] + num[i - 2] + num[i - 3];
+    }
+
+    return num[n];
+}
+
+int Num9095()
+{
+    int T;
+    std::cin >> T;
+
+    while (T--) {
+        int n;
+        std::cin >> n;
+
+        int ways = Sum4(n);
+        std::cout << ways << std::endl;
+    }
+
+    return 0;
+}
