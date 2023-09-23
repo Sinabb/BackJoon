@@ -1,10 +1,32 @@
 #include <iostream>
 #include "dynamicprogramming.h"
+#include "arrayfirst.h"
 
+#include <iostream>
+#include <vector>
 
-int main() 
-{
-	Dynamic2839();
+int main() {
+	int N;
+	std::cin >> N;
+
+	std::vector<int> integers(N);
+	for (int i = 0; i < N; ++i) {
+		std::cin >> integers[i];
+	}
+
+	int v;
+	std::cin >> v;
+
+	int count = 0;
+	for (int i = 0; i < N; ++i) {
+		if (integers[i] == v) {
+			count++;
+		}
+	}
+
+	std::cout << count << std::endl;
+
+	return 0;
 }
 /* 1번 Hello World!를 출력하세요
 
