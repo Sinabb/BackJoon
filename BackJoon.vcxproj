@@ -132,6 +132,7 @@
   <ItemGroup>
     <ClInclude Include="arrayfirst.h" />
     <ClInclude Include="dynamicprogramming.h" />
+    <ClInclude Include="implementation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
