@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <climits>
 
 using namespace std;
 
@@ -18,6 +19,30 @@ int Oven() {
     }
 
     cout << new_hour << " " << new_minute << endl;
+
+    return 0;
+}
+
+int maxmin() {
+    int n;
+    std::cin >> n;
+
+    int min_value = INT_MAX;
+    int max_value = INT_MIN;
+
+    for (int i = 0; i < n; i++) {
+        int num;
+        std::cin >> num;
+
+        if (num < min_value) {
+            min_value = num;
+        }
+        if (num > max_value) {
+            max_value = num;
+        }
+    }
+
+    std::cout << min_value << " " << max_value << std::endl;
 
     return 0;
 }
