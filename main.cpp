@@ -1,30 +1,44 @@
 #include <iostream>
-#include "dynamicprogramming.h"
-#include "arrayfirst.h"
-
-#include <iostream>
 #include <vector>
+#include <map>
 
 int main() {
-	int N;
-	std::cin >> N;
+	std::vector<int> dice(3);
 
-	std::vector<int> integers(N);
-	for (int i = 0; i < N; ++i) {
-		std::cin >> integers[i];
+	for (int i = 0; i < 3; i++) {
+		std::cin >> dice[i];
 	}
 
-	int v;
-	std::cin >> v;
-
-	int count = 0;
-	for (int i = 0; i < N; ++i) {
-		if (integers[i] == v) {
-			count++;
+	std::map<int, int> count;
+	for (int i = 0; i < 3; i++) {
+		if (count.find(dice[i]) != count.end()) {
+			count[dice[i]]++;
+		}
+		else {
+			count[dice[i]] = 1;
 		}
 	}
 
-	std::cout << count << std::endl;
+	int prize = 0;
+
+	if (count.size() == 1) {
+		
+		prize = 10000 + dice[0] * 1000;
+	}
+	else if (count.size() == 2) {
+		for (const auto& pair : count) {
+			if (pair.second == 2) {
+				prize = 1000 + pair.first * 100;
+				break;
+			}
+		}
+	}
+	else {
+	
+		prize = *std::max_element(dice.begin(), dice.end()) * 100;
+	}
+
+	std::cout << prize << std::endl;
 
 	return 0;
 }
