@@ -1,44 +1,21 @@
 #include <iostream>
 #include <vector>
-#include <map>
 
 int main() {
-	std::vector<int> dice(3);
-
-	for (int i = 0; i < 3; i++) {
-		std::cin >> dice[i];
-	}
-
-	std::map<int, int> count;
-	for (int i = 0; i < 3; i++) {
-		if (count.find(dice[i]) != count.end()) {
-			count[dice[i]]++;
-		}
-		else {
-			count[dice[i]] = 1;
-		}
-	}
-
-	int prize = 0;
-
-	if (count.size() == 1) {
-		
-		prize = 10000 + dice[0] * 1000;
-	}
-	else if (count.size() == 2) {
-		for (const auto& pair : count) {
-			if (pair.second == 2) {
-				prize = 1000 + pair.first * 100;
-				break;
-			}
-		}
-	}
-	else {
 	
-		prize = *std::max_element(dice.begin(), dice.end()) * 100;
+	int N, X;
+	std::cin >> N >> X;
+
+	std::vector<int> Sort(N);
+	for (int i = 0; i < N; ++i) {
+		std::cin >> Sort[i];
 	}
 
-	std::cout << prize << std::endl;
+	for (int i = 0; i < N; ++i) {
+		if (Sort[i] < X) {
+			std::cout << Sort[i] << " ";
+		}
+	}
 
 	return 0;
 }
@@ -163,4 +140,47 @@ std::string a, b;
 	std::cout << result << std::endl;
 
 	return 0;
+*/
+
+/*
+	int main() {
+	std::vector<int> dice(3);
+
+	for (int i = 0; i < 3; i++) {
+		std::cin >> dice[i];
+	}
+
+	std::map<int, int> count;
+	for (int i = 0; i < 3; i++) {
+		if (count.find(dice[i]) != count.end()) {
+			count[dice[i]]++;
+		}
+		else {
+			count[dice[i]] = 1;
+		}
+	}
+
+	int prize = 0;
+
+	if (count.size() == 1) {
+		
+		prize = 10000 + dice[0] * 1000;
+	}
+	else if (count.size() == 2) {
+		for (const auto& pair : count) {
+			if (pair.second == 2) {
+				prize = 1000 + pair.first * 100;
+				break;
+			}
+		}
+	}
+	else {
+	
+		prize = *std::max_element(dice.begin(), dice.end()) * 100;
+	}
+
+	std::cout << prize << std::endl;
+
+	return 0;
+}
 */
