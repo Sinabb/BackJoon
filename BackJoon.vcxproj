@@ -133,6 +133,7 @@
     <ClInclude Include="arrayfirst.h" />
     <ClInclude Include="B1330.h" />
     <ClInclude Include="B2562.h" />
+    <ClInclude Include="B27866.h" />
     <ClInclude Include="dynamicprogramming.h" />
     <ClInclude Include="implementation.h" />
   </ItemGroup>

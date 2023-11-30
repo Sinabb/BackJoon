@@ -1,8 +1,8 @@
 #include <iostream>
-#include "B2562.h"
+#include "B27866.h"
 
 int main() 
 {
-	B2562();
+	B27866();
 	return 0;
 }
