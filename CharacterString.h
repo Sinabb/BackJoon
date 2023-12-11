@@ -25,5 +25,6 @@ void B2743()
     std::string word;
     std::cin >> word;
     std::cout << word.length() << std::endl;
+
 }
 
