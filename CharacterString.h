@@ -28,3 +28,18 @@ void B2743()
 
 }
 
+void B9086()
+{
+	int T;
+	std::cin >> T;
+
+	while (T--) {
+		std::string input;
+		std::cin >> input;
+
+		char first = input[0];
+		char last = input[input.length() - 1];
+
+		std::cout << first << last << std::endl;
+	}
+}
