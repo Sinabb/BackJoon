@@ -43,3 +43,16 @@ void B9086()
 		std::cout << first << last << std::endl;
 	}
 }
+
+void B11654()
+{
+
+		char input;
+		std::cin >> input;
+
+		int asciiValue = static_cast<int>(input);
+
+		std::cout << asciiValue << std::endl;
+
+	
+}
