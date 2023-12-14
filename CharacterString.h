@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include <vector>
 #include <string>
 
 void B27866()
@@ -72,4 +73,28 @@ void B11720()
 	}
 
 	std::cout << sum << std::endl;
+}
+
+void B10809()
+{
+	std::string string;
+	std::cin >> string;
+
+	std::vector<int> positions(26, -1);
+
+	for (int i = 0; i <string.length(); i++)
+	{
+		char CharString = string[i];
+		int index = CharString - 'a';
+
+		if (positions[index] == -1)
+		{
+			positions[index] = i;
+		}
+	}
+
+	for (int i = 0; i < 26; i++)
+	{
+		std::cout << positions[i] << " ";
+	}
 }
