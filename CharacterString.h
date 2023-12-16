@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <sstream>
 #include <string>
 
 void B27866()
@@ -118,5 +119,35 @@ void B2675()
 			}
 		}
 			std::cout << std::endl;
+	}
+}
+
+void B1152()
+{
+#include <iostream>
+#include <string>
+#include <sstream>
+
+	int countWords(const std::string & input) {
+		std::stringstream ss(input);
+		std::string word;
+		int count = 0;
+
+		while (ss >> word) {
+			count++;
+		}
+
+		return count;
+	}
+
+	int main() {
+		std::string input;
+		std::getline(std::cin, input);
+
+		int wordCount = countWords(input);
+
+		std::cout << wordCount << std::endl;
+
+		return 0;
 	}
 }
