@@ -98,3 +98,25 @@ void B10809()
 		std::cout << positions[i] << " ";
 	}
 }
+
+void B2675()
+{
+
+	int T;
+	std::cin >> T;
+
+	while (T--) {
+		int R;
+		std::string S;
+		std::cin >> R >> S;
+
+		for (char c : S) 
+		{
+			for (int i = 0; i < R; ++i) 
+			{
+					std::cout << c;
+			}
+		}
+			std::cout << std::endl;
+	}
+}
