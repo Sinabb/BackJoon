@@ -128,7 +128,8 @@ void B1152()
 #include <string>
 #include <sstream>
 
-	int countWords(const std::string & input) {
+	int countWords(const std::string & input) 
+	{
 		std::stringstream ss(input);
 		std::string word;
 		int count = 0;
