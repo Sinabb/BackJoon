@@ -152,3 +152,30 @@ void B1152()
 		return 0;
 	}
 }
+
+void B2908()
+{
+#include <iostream>
+	using namespace std;
+
+	int main() {
+		
+		int A, B;
+		cin >> A >> B;
+
+		int a1 = A / 100;
+		int a2 = (A / 10) % 10;
+		int a3 = A % 10;
+
+		int b1 = B / 100;
+		int b2 = (B / 10) % 10;
+		int b3 = B % 10;
+
+		int constantA = a3 * 100 + a2 * 10 + a1;
+		int constantB = b3 * 100 + b2 * 10 + b1;
+
+		cout << (constantA > constantB ? constantA : constantB) << endl;
+
+		return 0;
+	}
+}
