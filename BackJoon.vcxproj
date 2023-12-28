@@ -130,6 +130,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Array2D.h" />
     <ClInclude Include="arrayfirst.h" />
     <ClInclude Include="B1330.h" />
     <ClInclude Include="B2562.h" />
