@@ -40,3 +40,39 @@ void B2745()
         return 0;
     }
 }
+
+void B11005()
+{
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+    std::string decimalToBase(int decimal, int base) {
+        std::string result = "";
+
+        while (decimal > 0) {
+            int remainder = decimal % base;
+            if (remainder < 10) {
+                result += (char)('0' + remainder);
+            }
+            else {
+                result += (char)('A' + remainder - 10);
+            }
+            decimal /= base;
+        }
+
+        std::reverse(result.begin(), result.end());
+
+        return result;
+    }
+
+    int main() {
+        int N, B;
+
+        std::cin >> N >> B;
+        std::string result = decimalToBase(N, B);
+        std::cout << result << std::endl;
+
+        return 0;
+    }
+}
