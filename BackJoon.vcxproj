@@ -136,6 +136,7 @@
     <ClInclude Include="B2562.h" />
     <ClInclude Include="B27866.h" />
     <ClInclude Include="CharacterString.h" />
+    <ClInclude Include="Deep1.h" />
     <ClInclude Include="dynamicprogramming.h" />
     <ClInclude Include="implementation.h" />
     <ClInclude Include="Math.h" />
